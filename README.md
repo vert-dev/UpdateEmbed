@@ -1,11 +1,6 @@
 <!-- markdownlint-disable MD030 -->
 
 # VertBuild Embed
-
-Javascript library to display on your website
-
-![Flowise](https://github.com/FlowiseAI/FlowiseChatEmbed/blob/main/images/ChatEmbed.gif?raw=true)
-
 Install:
 
 ```bash
@@ -24,7 +19,7 @@ Build:
 yarn build
 ```
 
-## Embed in your HTML
+## Embed in HTML
 
 ### PopUp
 
@@ -126,7 +121,3 @@ You can also customize chatbot with different configuration
   });
 </script>
 ```
-
-## License
-
-Source code in this repository is made available under the [MIT License](https://github.com/FlowiseAI/Flowise/blob/master/LICENSE.md).
