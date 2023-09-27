@@ -54,7 +54,7 @@ export const Badge = (props: Props) => {
         'background-color': props.badgeBackgroundColor ?? '#ffffff',
       }}
     >
-      Powered with
+      Powered by
       <a
         ref={liteBadge}
         href={'https://vertbuild.ai'}
@@ -67,7 +67,7 @@ export const Badge = (props: Props) => {
           color: props.poweredByTextColor ?? defaultTextColor,
         }}
       >
-        <span> Me!</span>
+        <span> VertBuild</span>
       </a>
     </span>
   );
