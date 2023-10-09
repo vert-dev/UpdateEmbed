@@ -34,59 +34,44 @@ function Suggestion(props: DropdownProps) {
   return (
     <div class="flex flex-wrap">
       <div class="w-full sm:w-6/12 md:w-4/12 px-4">
-        <div class="relative inline-flex align-middle w-full">
-          <button
-            class="text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 bg-slate-700 ease-linear transition-all duration-150"
-            type="button"
-            onClick={(e) => toggleDropdown(e, 'dropdown-id')}
+        <div class="">
+          <a
+            onClick={(e) => {
+              props.onInput(`What is LL97?`);
+              closeDropdown();
+            }}
+            class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
           >
-            Prompt Suggestions
-          </button>
-          <div
-            ref={dropdownDiv}
-            id="dropdown-id"
-            class={`${
-              isOpen() ? 'block' : 'hidden'
-            } bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mb-1`}
-            style="min-width:12rem"
+            What is LL97?
+            <br />
+          </a>
+
+          <a
+            onClick={(e) => {
+              props.onInput(`What can I do to get into compliance?`);
+              closeDropdown();
+            }}
+            class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
           >
-            <a
-              onClick={(e) => {
-                props.onInput(`What is LL97?`);
-                closeDropdown();
-              }}
-              class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-            >
-              What is LL97?
-            </a>
-            <a
-              onClick={(e) => {
-                props.onInput(`What can I do to get into compliance?`);
-                closeDropdown();
-              }}
-              class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-            >
-              What can I do to get into compliance?
-            </a>
-            <a
-              onClick={(e) => {
-                props.onInput(
-                  `What type of projects to you recommend I start?`
-                );
-                closeDropdown();
-              }}
-              class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-            >
-              What type of projects to you recommend I start?
-            </a>
-            {/* <div class="h-0 my-2 border border-solid border-t-0 border-slate-800 opacity-25"></div>
+            What can I do to get into compliance?
+            <br />
+          </a>
+          <a
+            onClick={(e) => {
+              props.onInput(`What type of projects to you recommend I start?`);
+              closeDropdown();
+            }}
+            class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+          >
+            What type of projects to you recommend I start?
+          </a>
+          {/* <div class="h-0 my-2 border border-solid border-t-0 border-slate-800 opacity-25"></div>
             <a
               href="#"
               class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
             >
               Take Me Home
             </a> */}
-          </div>
         </div>
       </div>
     </div>
