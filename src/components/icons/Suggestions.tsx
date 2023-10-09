@@ -52,12 +52,12 @@ function Suggestion(props: DropdownProps) {
           >
             <a
               onClick={(e) => {
-                props.onInput(`Tell me about my building`);
+                props.onInput(`What is LL97?`);
                 closeDropdown();
               }}
               class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
             >
-              Tell me about my building
+              What is LL97?
             </a>
             <a
               onClick={(e) => {
