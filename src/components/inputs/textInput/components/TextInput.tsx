@@ -64,7 +64,6 @@ export const TextInput = (props: Props) => {
         }}
         onKeyDown={submitWhenEnter}
       >
-        <Dropdown onInput={handleSuggestionClick} />
         <ShortTextInput
           ref={inputRef as HTMLInputElement}
           onInput={handleInput}
