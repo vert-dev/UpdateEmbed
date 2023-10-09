@@ -47,39 +47,40 @@ export const TextInput = (props: Props) => {
   });
 
   return (
-    <div
-      class={'flex items-end justify-between chatbot-input'}
-      data-testid="input"
-      style={{
-        'border-top': '1px solid #eeeeee',
-        position: 'absolute',
-        left: '20px',
-        right: '20px',
-        bottom: '40px',
-        margin: 'auto',
-        'z-index': 1000,
-        'background-color': props.backgroundColor ?? defaultBackgroundColor,
-        color: props.textColor ?? defaultTextColor,
-      }}
-      onKeyDown={submitWhenEnter}
-    >
-      <Dropdown onInput={handleSuggestionClick} />
-      <ShortTextInput
-        ref={inputRef as HTMLInputElement}
-        onInput={handleInput}
-        value={inputValue()}
-        fontSize={props.fontSize}
-        placeholder={props.placeholder ?? 'Type your question'}
-      />
-      <SendButton
-        sendButtonColor={props.sendButtonColor}
-        type="button"
-        isDisabled={inputValue() === ''}
-        class="my-2 ml-2"
-        on:click={submit}
+    <>
+      <div
+        class={'flex items-end justify-between chatbot-input'}
+        data-testid="input"
+        style={{
+          'border-top': '1px solid #eeeeee',
+          position: 'absolute',
+          left: '20px',
+          right: '20px',
+          bottom: '40px',
+          margin: 'auto',
+          'z-index': 1000,
+          'background-color': props.backgroundColor ?? defaultBackgroundColor,
+          color: props.textColor ?? defaultTextColor,
+        }}
+        onKeyDown={submitWhenEnter}
       >
-        <span style={{ 'font-family': 'Poppins, sans-serif' }}>Send</span>
-      </SendButton>
-    </div>
+        <ShortTextInput
+          ref={inputRef as HTMLInputElement}
+          onInput={handleInput}
+          value={inputValue()}
+          fontSize={props.fontSize}
+          placeholder={props.placeholder ?? 'Type your question'}
+        />
+        <SendButton
+          sendButtonColor={props.sendButtonColor}
+          type="button"
+          isDisabled={inputValue() === ''}
+          class="my-2 ml-2"
+          on:click={submit}
+        >
+          <span style={{ 'font-family': 'Poppins, sans-serif' }}>Send</span>
+        </SendButton>
+      </div>
+    </>
   );
 };

@@ -17,6 +17,8 @@ import {
 import { Badge } from './Badge';
 import socketIOClient from 'socket.io-client';
 import { Popup } from '@/features/popup';
+import { MagicIcon } from './icons';
+import Suggestion from './icons/Suggestions';
 
 type messageType = 'apiMessage' | 'userMessage' | 'usermessagewaiting';
 
@@ -443,7 +445,9 @@ export const Bot = (props: BotProps & { class?: string }) => {
                 </>
               )}
             </For>
+            <Suggestion onInput={handleSubmit} />
           </div>
+
           <TextInput
             backgroundColor={props.textInput?.backgroundColor}
             textColor={props.textInput?.textColor}
