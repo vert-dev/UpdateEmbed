@@ -15,7 +15,7 @@ export const initFull = (props: BotProps & { id?: string }) => {
 };
 
 export const init = (props: BotProps) => {
-  const element = document.createElement('vertbuild-chatbot');
+  const element = document.createElement('vert-chatbot');
   Object.assign(element, props);
   document.body.appendChild(element);
 };
