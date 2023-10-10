@@ -1,8 +1,6 @@
 <!-- markdownlint-disable MD030 -->
 
 # VertBuild Embed
-
-Javascript library to display on your website
 Install:
 
 ```bash
@@ -21,7 +19,7 @@ Build:
 yarn build
 ```
 
-## Embed in your HTML
+## Embed in HTML
 
 ### PopUp
 
@@ -124,4 +122,3 @@ You can also customize chatbot with different configuration
 </script>
 ```
 
-## License
