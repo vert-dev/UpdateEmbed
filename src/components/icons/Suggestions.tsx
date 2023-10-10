@@ -40,7 +40,7 @@ function Suggestion(props: DropdownProps) {
               props.onInput(`What is LL97?`);
               closeDropdown();
             }}
-            class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+            class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blue-400"
           >
             What is LL97?
             <br />
@@ -51,7 +51,7 @@ function Suggestion(props: DropdownProps) {
               props.onInput(`What can I do to get into compliance?`);
               closeDropdown();
             }}
-            class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+            class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blue-400"
           >
             What can I do to get into compliance?
             <br />
@@ -61,7 +61,7 @@ function Suggestion(props: DropdownProps) {
               props.onInput(`What type of projects to you recommend I start?`);
               closeDropdown();
             }}
-            class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+            class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blue-400"
           >
             What type of projects to you recommend I start?
           </a>
