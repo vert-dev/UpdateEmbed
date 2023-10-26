@@ -173,6 +173,11 @@ textarea {
   border-radius: var(--chatbot-border-radius);
 }
 
+.table {
+  background-color: rgb(27, 31, 45);
+  color: rgb(255, 255, 255);
+}
+
 .chatbot-button.selectable {
   color: var(--chatbot-host-bubble-color);
   background-color: #f7f8ff;
