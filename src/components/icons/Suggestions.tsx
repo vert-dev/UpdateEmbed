@@ -58,12 +58,12 @@ function Suggestion(props: DropdownProps) {
           </a>
           <a
             onClick={(e) => {
-              props.onInput(`What type of projects to you recommend I start?`);
+              props.onInput(`What type of projects do you recommend I start?`);
               closeDropdown();
             }}
             class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blue-400"
           >
-            What type of projects to you recommend I start?
+            What type of projects do you recommend I start?
           </a>
           {/* <div class="h-0 my-2 border border-solid border-t-0 border-slate-800 opacity-25"></div>
             <a
