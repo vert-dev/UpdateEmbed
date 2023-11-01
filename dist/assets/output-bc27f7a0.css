@@ -1091,7 +1091,6 @@ progress {
 
 .list-inline {
   padding-left: 0;
-  list-style: none;
 }
 
 .list-inline-item {
@@ -3993,7 +3992,6 @@ textarea.form-control-lg {
   font-size: var(--bs-dropdown-font-size);
   color: var(--bs-dropdown-color);
   text-align: left;
-  list-style: none;
   background-color: var(--bs-dropdown-bg);
   background-clip: padding-box;
   border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
